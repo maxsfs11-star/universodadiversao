@@ -1,0 +1,382 @@
+* {
+  margin: 0px;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Comic Sans MS',Arial;
+}
+
+body {    
+   
+    margin: 5;
+    padding: 5;
+    background-color: #fff;
+    box-sizing: border-box;
+    
+}
+
+.banner {
+    margin: 0px;
+    padding: 0;
+}
+
+header {
+    
+    background-image: linear-gradient(to top, #411C86, #FDC00D);    
+    text-align: center; 
+    padding: 10px 20px;
+}
+
+ .menu a {
+    text-align: center;
+    color: #fafaf6;
+    text-decoration: none;
+ } 
+
+ .menu nav a {
+    font-size: 20px;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+    text-shadow: 0px 1px black;
+    cursor: pointer;    
+    background-color: transparent;    
+
+}
+
+
+
+.menu nav :hover {
+    text-decoration: none;
+    color: #e0b908;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ 
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+    text-align: center;
+    
+
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    
+  }
+  
+ 
+  
+  
+
+.texto {
+    padding-bottom: 40px;
+    font-size: 40px;
+    
+}
+
+.textoprincipal {
+    text-align: center;
+    background-color: #f3c11b;
+    padding: 10px;
+    color: #ffffff;
+    text-shadow: 0px 1px black;
+    font-weight: bolder;
+    font-size: 30px;
+    
+}
+       
+    
+    
+    
+
+
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+    padding: 20px;    
+    background-position: center;
+    
+
+}
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+h2 {
+        
+    text-align: center;
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.opcoes {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    font-size:36px;
+    color:#ff5fa0;
+    margin-bottom:30px;
+    max-width: 100%;
+    max-height: 30%;
+    
+    
+}
+
+
+.sobre {
+    background-image: url("imagens/roxo1.jpg");
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+.parceiros {    
+    display: flex;
+    padding: 20px;
+    gap: 20%;     
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    justify-content: center;
+
+}
+
+
+
+.item {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.item img {
+    padding-top: 40px;
+    max-width: 110%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.item h3{
+    padding:15px;
+    background:#440380;
+    color:#fafaf6;
+    text-shadow: 2px 2px black;
+    border-radius: 20px;
+    font-size: 25px;
+    
+  } 
+
+.empresatexto {
+    font-size: 30px;
+}
+
+.empresaparagrafo {
+    font-size: 15px;
+
+}
+  
+footer {
+    background-image: url("imagens/roxo1.jpg");
+    color: white;    
+    padding: 40px 0;    
+    
+}
+
+footer .rodape img {
+    max-width: 120px;
+}
+
+.rodape2{
+    font-size: 15px;
+    margin: 0px 0px;
+    
+    
+}
+
+footer .rodape2 .rodape{
+    max-width: calc(100% / 5);
+
+}
+
+.rodape {
+
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    
+}
+
+footer .rodape2 {
+    text-align: center;
+    
+    
+}
+
+.rodape .rodape2 h5{
+    color: #fcf805;
+    margin-bottom: 10px;
+    
+}
+
+.rodape .rodape2 a{
+    color: #fff;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    
+}
+
+.rodape .btn-redes button{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .2s;
+}
+
+.rodape .btn-redes button :hover{
+    background-color: #6c09cf;
+    border-color: #770bca;
+}
+
+footer .rodape3 {
+    padding-top: 40px ;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 70px;
+    height: 70px;    
+    color: green;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 5px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    z-index: 999;
+    
+}
+.whatsapp-float i {
+    margin-top: 80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  Created by: Truzz Blogg  */
+/*  Youtube Link: https://youtu.be/l7W5pHSr1w0  */
+
+
+/* CSS para el Preloader */
+
+
+
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	animation: spinz 1.35s linear infinite;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff; 
+	background-image: url(imagens/dot.gif);       /*Change the background color here */
+  background-repeat: no-repeat;
+	z-index: 100;
+  background-position: center;
+  }
+  
+  
+
+  .loader {
+	/*Change the preloader color here */
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	animation: spin 1.35s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -60px;
+  }
+
+  @keyframes spin {
+	0% {
+	  transform: rotate(0deg);
+	  opacity:1;
+	}
+	50% {
+	  transform: rotate(360deg);
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	  transform: rotate(180deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	  opacity:0;
+	}
+  }
+  
+  @keyframes spinz {
+	0% {
+	  opacity:1;
+	}
+	50% {
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	}
+	100% {
+	  opacity:0;
+	}
+  }
+
+
+  
+  
