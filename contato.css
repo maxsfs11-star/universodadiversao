@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #fff7da 0%, #ffffff 35%, #f8f5ff 100%);
+}
+
+.hero-contato {
+  background: linear-gradient(to top, #411C86, #FDC00D);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 50px;
+}
+
+.container-contato {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.logo-contato {
+  width: 110px;
+  margin-bottom: 10px;
+}
+
+.hero-contato h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+.hero-contato p {
+  max-width: 700px;
+  margin: 0 auto 24px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.hero-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-principal,
+.btn-secundario {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.btn-principal {
+  background: #25d366;
+  color: #fff;
+}
+
+.btn-secundario {
+  background: #fff;
+  color: #411C86;
+}
+
+.btn-principal:hover,
+.btn-secundario:hover {
+  transform: translateY(-2px);
+}
+
+.pagina-contato {
+  padding: 40px 0 70px;
+}
+
+.contato-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.3fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.contato-info {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(65, 28, 134, 0.12);
+}
+
+.contato-info h2 {
+  text-align: left;
+  padding: 0;
+  margin-bottom: 14px;
+  color: #411C86;
+  font-size: 1.8rem;
+}
+
+.contato-info p {
+  margin-bottom: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.info-card {
+  background: #f9f6ff;
+  border-left: 5px solid #411C86;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.info-card h3 {
+  margin: 0 0 8px;
+  color: #411C86;
+  font-size: 1.1rem;
+}
+
+.info-card p {
+  margin: 0;
+}
+
+.info-card.destaque {
+  background: #fff8db;
+  border-left-color: #FDC00D;
+}
+
+.contato-form-area {
+  min-width: 0;
+}
+
+.form-box {
+  background: #fff;
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 12px 30px rgba(65, 28, 134, 0.12);
+  border: 2px solid rgba(253, 192, 13, 0.22);
+}
+
+.form-box h2 {
+  padding: 0;
+  margin-bottom: 8px;
+  color: #411C86;
+}
+
+.form-box p {
+  margin-bottom: 22px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #411C86;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1.5px solid #d7d2e5;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s ease;
+  background: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #411C86;
+  box-shadow: 0 0 0 4px rgba(65, 28, 134, 0.08);
+}
+
+.form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.form-erro {
+  background: #fff0f0;
+  color: #b42318;
+  border: 1px solid #f4b4b4;
+  padding: 12px 14px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.btn-whatsapp,
+.btn-limpar {
+  border: none;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  color: white;
+  flex: 1;
+}
+
+.btn-limpar {
+  background: #f3f0fa;
+  color: #411C86;
+  min-width: 160px;
+}
+
+.btn-whatsapp:hover,
+.btn-limpar:hover {
+  transform: translateY(-2px);
+}
+
+.texto-ajuda {
+  margin-top: 16px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.campo-obrigatorio {
+  color: #e53935;
+  margin-left: 4px;
+}
+
+@media (max-width: 900px) {
+  .contato-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-contato h1 {
+    font-size: 2rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-box,
+  .contato-info {
+    padding: 22px;
+  }
+}
