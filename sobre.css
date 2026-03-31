@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   box-sizing: border-box;
 }
@@ -309,3 +310,185 @@ body {
     padding: 20px;
   }
 }
+=======
+body {
+  margin: 0px;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Comic Sans MS',Arial;
+  }
+  
+  header {
+    background-image: linear-gradient(to top, #411C86, #FDC00D);    
+    text-align: center; 
+    padding: 10px 20px;
+    
+    
+  }
+
+  header ul{
+    list-style: none;
+    padding: 0;
+    display: inline;
+    justify-content: center;
+    color: #fff;
+
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #0077cc;
+    color: white;
+  }
+
+  .orcamento{
+    background:#ffefd5;
+    padding:60px 20px;
+    text-align:center;
+  }
+  .orcamento h2{
+   
+    font-size:32px;
+    margin-bottom:25px;
+    color:#ff5fa0;
+  }
+
+  form{
+    max-width:500px;
+    margin: auto;
+  }
+  form input, form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:2px solid #ffd1dc;
+    font-size:16px;
+    background-size: 30%;
+  }
+  form button{
+    padding:15px 40px;
+    background:#ff69b4;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:opacity .3s;
+    background-size: 30%;
+    margin-bottom: 30px;
+  }
+  form button:hover{
+    opacity:0.8;
+    background-size: 30%;
+    background-size: 30%;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  /*  Created by: Truzz Blogg  */
+/*  Youtube Link: https://youtu.be/l7W5pHSr1w0  */
+
+
+/* CSS para el Preloader */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	animation: spinz 1.35s linear infinite;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff; 
+	background-image: url(imagens/dot.gif);       /*Change the background color here */
+  background-repeat: no-repeat;
+	z-index: 100;
+  background-position: center;
+  }
+  
+  
+
+  .loader {
+	/*Change the preloader color here */
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	animation: spin 1.35s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -60px;
+  }
+
+  @keyframes spin {
+	0% {
+	  transform: rotate(0deg);
+	  opacity:1;
+	}
+	50% {
+	  transform: rotate(360deg);
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	  transform: rotate(180deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	  opacity:0;
+	}
+  }
+  
+  @keyframes spinz {
+	0% {
+	  opacity:1;
+	}
+	50% {
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	}
+	100% {
+	  opacity:0;
+	}
+  }
+>>>>>>> 7b516e099f8c962bc85b0983bc07b0efc741523c

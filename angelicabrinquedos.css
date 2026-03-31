@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Estilo infantil colorido */
 * {
   box-sizing: border-box;
@@ -242,3 +243,196 @@ nav a {
     bottom: 16px;
   }
 }
+=======
+/* Estilo infantil colorido */
+* {
+    margin: 0px;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Comic Sans MS',Arial;
+  }
+  
+  body{
+    background:#FFF8F0;
+  }
+  .container{
+    max-width:1000px;
+    margin:auto;
+    padding:0px 0px;
+  }
+
+
+  .tema {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    color: #fdf6f0;
+  }
+  
+  header{
+    max-width: 100%;
+    margin: auto;
+    background-image: url(imagens/funbo.png);
+    background-repeat: no-repeat;
+    color:#fff;
+    text-align:center;
+    padding: 120px;
+    
+  }
+  header h1{ font-size:48px; letter-spacing:1px;}
+  header p{ font-size:20px; }
+  
+  .catalogo{ padding: 0 0px; text-align:center;}
+  .catalogo h2{
+    font-size:16px;
+    color:#ff5fa0;
+    margin-bottom:30px;
+  }
+
+  .grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+    padding: 10px;
+   } 
+
+  nav {
+    text-align: center;   
+    background-image: linear-gradient(to bottom right, red, yellow);
+    padding: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  }
+
+nav a {
+    font-size: 15px;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+  .item{
+    background:#fff;
+    width:280px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:transform .7s;
+  }
+
+  
+  .item:hover{
+    transform:translateY(-8px);
+  }
+  .item img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+  }
+  .item h3{
+    padding:15px;
+    background:#ffe0f0;
+    color:#d63384;
+  } 
+  
+  
+  
+  footer{
+    text-align:center;
+    padding: 15px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    color:#fff;
+    margin-top:40px;
+  }
+  
+  /* Botão WhatsApp */
+  .whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25d366;
+    color:#fff;
+    border-radius:50%;
+    font-size:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    z-index:999;
+  }
+
+  /*  Created by: Truzz Blogg  */
+/*  Youtube Link: https://youtu.be/l7W5pHSr1w0  */
+
+
+/* CSS para el Preloader */
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	animation: spinz 1.35s linear infinite;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff; 
+	background-image: url(imagens/dot.gif);       /*Change the background color here */
+  background-repeat: no-repeat;
+	z-index: 100;
+  background-position: center;
+  }
+  
+  
+
+  .loader {
+	/*Change the preloader color here */
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	animation: spin 1.35s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -60px;
+  }
+
+  @keyframes spin {
+	0% {
+	  transform: rotate(0deg);
+	  opacity:1;
+	}
+	50% {
+	  transform: rotate(360deg);
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	  transform: rotate(180deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	  opacity:0;
+	}
+  }
+  
+  @keyframes spinz {
+	0% {
+	  opacity:1;
+	}
+	50% {
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	}
+	100% {
+	  opacity:0;
+	}
+  }
+  
+>>>>>>> 7b516e099f8c962bc85b0983bc07b0efc741523c
