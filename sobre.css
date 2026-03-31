@@ -1,494 +1,187 @@
-<<<<<<< HEAD
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --roxo: #411c86;
+  --amarelo: #fdc00d;
+  --texto: #2d2d2d;
+  --card: #ffffff;
+  --bg: #f7f4ff;
+  --sombra: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
 body {
-  margin: 0px;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Comic Sans MS',Arial;
-  }
-  
-  header {
-    background-image: linear-gradient(to top, #411C86, #FDC00D);    
-    text-align: center; 
-    padding: 10px 20px;
-    
-    
-  }
-
-  header ul{
-    list-style: none;
-    padding: 0;
-    display: inline;
-    justify-content: center;
-    color: #fff;
-
-  }
-
-  header h1 {
-    font-size: 20px;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .sobre {
-    background-image: url("roxo1.jpg");
-    background-position: center;
-    background-size: cover;
-    color: #ffffff;
-    font-weight: bold;
-    min-height: 220px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--texto);
 }
 
-.sobre-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(20, 10, 50, 0.7);
-  backdrop-filter: blur(3px);
+img {
+  max-width: 100%;
+  display: block;
 }
 
-.container-sobre {
-  position: relative;
-  max-width: 1200px;
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1150px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
-.sobre-conteudo {
+.pagina-topo {
+  background: linear-gradient(135deg, var(--roxo), #5f29c7);
+  padding: 22px 0 28px;
+}
+
+.topo-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-pagina {
+  width: 96px;
+}
+
+.voltar,
+.menu-pagina a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.menu-pagina {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-sobre,
+.secao-conteudo,
+.cta-sobre {
+  padding: 70px 0;
+}
+
+.hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
   align-items: center;
 }
 
-.sobre-texto h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #FDC00D;
-}
-
-.sobre-texto p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.selo {
+  display: inline-block;
+  background: rgba(65, 28, 134, 0.1);
+  color: var(--roxo);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 700;
   margin-bottom: 16px;
 }
 
-.btn-sobre {
-  display: inline-block;
-  margin-top: 20px;
-  background: #FDC00D;
-  color: #411C86;
-  padding: 12px 20px;
-  border-radius: 10px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s;
+.hero-sobre h1 {
+  font-size: 2.8rem;
+  color: var(--roxo);
+  margin-bottom: 16px;
 }
 
-.btn-sobre:hover {
-  transform: translateY(-3px);
+.hero-sobre p {
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
-/* CARDS */
+.box-destaque,
+.bloco-info {
+  background: var(--card);
+  border-radius: 22px;
+  box-shadow: var(--sombra);
+  padding: 24px;
+}
 
-.sobre-cards {
+.box-destaque h3,
+.bloco-info h2 {
+  color: var(--roxo);
+  margin-bottom: 12px;
+}
+
+.grid-conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 18px;
+  gap: 24px;
 }
 
-.card-sobre {
-  background: rgba(255, 255, 255, 0.08);
+.bloco-amplo {
+  grid-column: 1 / -1;
+}
+
+.bloco-info ul {
+  padding-left: 18px;
+  line-height: 1.9;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, var(--roxo), #5f29c7);
+  color: #fff;
+  border-radius: 24px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  box-shadow: var(--sombra);
+}
+
+.btn-cta {
+  background: var(--amarelo);
+  color: var(--roxo);
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.rodape-pagina {
+  text-align: center;
   padding: 20px;
-  border-radius: 16px;
-  backdrop-filter: blur(6px);
-  transition: 0.3s;
+  background: var(--roxo);
+  color: #fff;
 }
-
-.card-sobre:hover {
-  transform: translateY(-5px);
-}
-
-.card-sobre h3 {
-  margin-bottom: 10px;
-  color: #FDC00D;
-}
-
-.card-sobre p {
-  font-size: 0.95rem;
-}
-
-.card-sobre.destaque {
-  background: #FDC00D;
-  color: #411C86;
-}
-
-.card-sobre.destaque h3 {
-  color: #411C86;
-}
-
-/* RESPONSIVO */
 
 @media (max-width: 900px) {
-  .sobre-conteudo {
+  .hero-grid,
+  .grid-conteudo {
     grid-template-columns: 1fr;
   }
 
-  .sobre-cards {
-    grid-template-columns: 1fr;
+  .bloco-amplo {
+    grid-column: auto;
   }
 
-  .sobre-texto h2 {
-    font-size: 2rem;
-  }
-}
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-    background: #0077cc;
-    color: white;
-  }
-
-  .orcamento{
-    background:#ffefd5;
-    padding:60px 20px;
-    text-align:center;
-  }
-  .orcamento h2{
-   
-    font-size:32px;
-    margin-bottom:25px;
-    color:#ff5fa0;
-  }
-
-  form{
-    max-width:500px;
-    margin: auto;
-  }
-  form input, form textarea{
-    width:100%;
-    padding:12px;
-    margin-bottom:15px;
-    border-radius:8px;
-    border:2px solid #ffd1dc;
-    font-size:16px;
-    background-size: 30%;
-  }
-  form button{
-    padding:15px 40px;
-    background:#ff69b4;
-    color:#fff;
-    border:none;
-    border-radius:10px;
-    font-size:18px;
-    cursor:pointer;
-    transition:opacity .3s;
-    background-size: 30%;
-    margin-bottom: 30px;
-  }
-  form button:hover{
-    opacity:0.8;
-    background-size: 30%;
-    background-size: 30%;
-  }
-
-  button {
-    margin-top: 20px;
-    padding: 12px;
-    background: #28a745;
-    color: white;
-    border: none;
-    width: 100%;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-
-  /*  Created by: Truzz Blogg  */
-/*  Youtube Link: https://youtu.be/l7W5pHSr1w0  */
-
-
-/* CSS para el Preloader */
-.preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	animation: spinz 1.35s linear infinite;
-	width: 100%;
-	height: 100%;
-	background-color: #ffffff; 
-	background-image: url(imagens/dot.gif);       /*Change the background color here */
-  background-repeat: no-repeat;
-	z-index: 100;
-  background-position: center;
-  }
-  
-  
-
-  .loader {
-	/*Change the preloader color here */
-	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-	animation: spin 1.35s linear infinite;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -60px;
-	margin-left: -60px;
-  }
-
-  @keyframes spin {
-	0% {
-	  transform: rotate(0deg);
-	  opacity:1;
-	}
-	50% {
-	  transform: rotate(360deg);
-	  opacity:1;
-	}
-	75% {
-	  opacity:1;
-	  transform: rotate(180deg);
-	}
-	100% {
-	  transform: rotate(0deg);
-	  opacity:0;
-	}
-  }
-  
-  @keyframes spinz {
-	0% {
-	  opacity:1;
-	}
-	50% {
-	  opacity:1;
-	}
-	75% {
-	  opacity:1;
-	}
-	100% {
-	  opacity:0;
-	}
-  }
-
-  @media (max-width: 768px) {
-  .sobre-conteudo {
-    display: flex;
+  .cta-box {
     flex-direction: column;
-  }
-
-  .sobre-texto h1,
-  .sobre-texto h2 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
-  .sobre-texto p {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .form-container {
-    width: 100%;
-    padding: 20px;
+    align-items: flex-start;
   }
 }
-=======
-body {
-  margin: 0px;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Comic Sans MS',Arial;
-  }
-  
-  header {
-    background-image: linear-gradient(to top, #411C86, #FDC00D);    
-    text-align: center; 
-    padding: 10px 20px;
-    
-    
+
+@media (max-width: 768px) {
+  .menu-pagina {
+    flex-direction: column;
+    align-items: center;
   }
 
-  header ul{
-    list-style: none;
-    padding: 0;
-    display: inline;
-    justify-content: center;
-    color: #fff;
-
+  .hero-sobre h1 {
+    font-size: 2.1rem;
   }
 
-  header h1 {
-    font-size: 20px;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 8px;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-    background: #0077cc;
-    color: white;
-  }
-
-  .orcamento{
-    background:#ffefd5;
-    padding:60px 20px;
-    text-align:center;
-  }
-  .orcamento h2{
-   
-    font-size:32px;
-    margin-bottom:25px;
-    color:#ff5fa0;
-  }
-
-  form{
-    max-width:500px;
-    margin: auto;
-  }
-  form input, form textarea{
-    width:100%;
-    padding:12px;
-    margin-bottom:15px;
-    border-radius:8px;
-    border:2px solid #ffd1dc;
-    font-size:16px;
-    background-size: 30%;
-  }
-  form button{
-    padding:15px 40px;
-    background:#ff69b4;
-    color:#fff;
-    border:none;
-    border-radius:10px;
-    font-size:18px;
-    cursor:pointer;
-    transition:opacity .3s;
-    background-size: 30%;
-    margin-bottom: 30px;
-  }
-  form button:hover{
-    opacity:0.8;
-    background-size: 30%;
-    background-size: 30%;
-  }
-
-  button {
-    margin-top: 20px;
-    padding: 12px;
-    background: #28a745;
-    color: white;
-    border: none;
+  .btn-cta {
     width: 100%;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
+    text-align: center;
   }
-
-  /*  Created by: Truzz Blogg  */
-/*  Youtube Link: https://youtu.be/l7W5pHSr1w0  */
-
-
-/* CSS para el Preloader */
-.preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	animation: spinz 1.35s linear infinite;
-	width: 100%;
-	height: 100%;
-	background-color: #ffffff; 
-	background-image: url(imagens/dot.gif);       /*Change the background color here */
-  background-repeat: no-repeat;
-	z-index: 100;
-  background-position: center;
-  }
-  
-  
-
-  .loader {
-	/*Change the preloader color here */
-	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-	animation: spin 1.35s linear infinite;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -60px;
-	margin-left: -60px;
-  }
-
-  @keyframes spin {
-	0% {
-	  transform: rotate(0deg);
-	  opacity:1;
-	}
-	50% {
-	  transform: rotate(360deg);
-	  opacity:1;
-	}
-	75% {
-	  opacity:1;
-	  transform: rotate(180deg);
-	}
-	100% {
-	  transform: rotate(0deg);
-	  opacity:0;
-	}
-  }
-  
-  @keyframes spinz {
-	0% {
-	  opacity:1;
-	}
-	50% {
-	  opacity:1;
-	}
-	75% {
-	  opacity:1;
-	}
-	100% {
-	  opacity:0;
-	}
-  }
->>>>>>> 7b516e099f8c962bc85b0983bc07b0efc741523c
+}

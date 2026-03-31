@@ -1,355 +1,74 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo Completo</title>
-  <link rel="stylesheet" href="catalogocompleto.css">
-  <link rel="icon" href="angelicabrinquedos.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo Completo</title>
+    <link rel="stylesheet" href="catalogocompleto.css" />
+    <link rel="icon" href="angelicabrinquedos.png" />
+  </head>
+  <body>
+    <header class="pagina-topo">
+      <div class="container topo-conteudo">
+        <a href="index.html" class="voltar">← Voltar ao início</a>
+        <h1>Catálogo Completo</h1>
+        <nav class="menu-pagina">
+          <a href="paginaangelica.html">Angélica Brinquedos</a>
+          <a href="deliciasdaaline.html">Delícias da Aline</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
 
-</head>
-<body>
-
-    <div class="preloader" id="preloader">
-        <div class="loader" id="loader"></div>
-        
-    </div>
-
-    <nav>
-        <a href="index.html">Inicio</a>    
-        <a href="deliciasdaaline">Delicias da Aline</a>        
-        <a href="contato">Contato</a>
-    </nav>
-
-  <header>   
-
-    
-  </header>
-
-
-  <main>
-    <section class="catalogo">
-    
-        <h5 class="tema">Brinquedos</h5>
-        <div class="categoria">
-            
-            <div class="item">
-                
-                <img src="futebol.png" width="150" height="200">
-                
-            </div>
-    
-            <div class="item">                
-                <img src="toboga.png">                
-            </div>
-    
-            <div class="item">
-                
-                <img src="mesaping.png">
-                
-            </div>   
-
-              
-            
-                        
+    <main>
+      <section class="secao-catalogo">
+        <div class="container">
+          <div class="titulo-secao">
+            <span>Brinquedos</span>
+            <h2>Itens para diversão</h2>
+          </div>
+          <div class="categoria-grid">
+            <article class="item"><img src="futebol.png" alt="Futebol de sabão" /><h3>Futebol de sabão</h3></article>
+            <article class="item"><img src="toboga.png" alt="Tobogã inflável" /><h3>Tobogã inflável</h3></article>
+            <article class="item"><img src="mesaping.png" alt="Mesa de pingue-pongue" /><h3>Mesa de pingue-pongue</h3></article>
+            <article class="item"><img src="pula-pula.png" alt="Pula-pula" /><h3>Pula-pula</h3></article>
+            <article class="item"><img src="bolinhas.png" alt="Piscina de bolinhas" /><h3>Piscina de bolinhas</h3></article>
+            <article class="item"><img src="escorega.png" alt="Escorrega" /><h3>Escorrega</h3></article>
+            <article class="item"><img src="mini.png" alt="Mini brinquedo" /><h3>Mini brinquedo</h3></article>
+            <article class="item"><img src="escorregagrande.png" alt="Escorrega grande" /><h3>Escorrega grande</h3></article>
+            <article class="item"><img src="castelinhaescorrega.png" alt="Castelinho com escorrega" /><h3>Castelinho com escorrega</h3></article>
+          </div>
         </div>
+      </section>
 
-        
-    </section>
-
-    <section class="catalogo">
-    
-        <div class="categoria">
-            <div class="item">
-                
-                <img src="pula-pula.png">
-                
-            </div>
-    
-            <div class="item">
-                
-                <img src="bolinhas.png">
-                
-            </div>
-    
-            <div class="item">
-                
-                <img src="escorega.png">
-                
-            </div>   
-
-             
-            
-                                    
+      <section class="secao-catalogo secao-alimentos">
+        <div class="container">
+          <div class="titulo-secao">
+            <span>Guloseimas</span>
+            <h2>Sabores para a sua festa</h2>
+          </div>
+          <div class="categoria-grid categoria-menor">
+            <article class="item"><img src="algodaodoce.png" alt="Algodão doce" /><h3>Algodão doce</h3></article>
+            <article class="item"><img src="churros.png" alt="Churros" /><h3>Churros</h3></article>
+            <article class="item"><img src="crepe.png" alt="Crepe" /><h3>Crepe</h3></article>
+            <article class="item"><img src="pipoca.png" alt="Pipoca" /><h3>Pipoca</h3></article>
+          </div>
         </div>
+      </section>
+    </main>
 
-        
-    </section>
+    <a
+      href="https://wa.me/5517991042693"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="whatsapp-float"
+      aria-label="Abrir WhatsApp"
+    >
+      <img src="zap.png" alt="WhatsApp" />
+    </a>
 
-    <section>
-
-        <div class="categoria">
-            <div class="item">
-                
-                <img src="mini.png">
-                
-            </div>  
-
-            <div class="item">
-                
-                <img src="escorregagrande.png">
-                
-            </div> 
-
-            <div class="item">
-                
-                <img src="castelinhaescorrega.png">
-                
-            </div>
-        </div>
-
-    </section>
-    <h5 class="tema">Guloseimas</h5>
-    <section class="categoria">
-      
-      <div class="item">
-                
-        <img src="algodaodoce.png">
-        
-    </div>
-
-    <div class="item">
-                
-        <img src="churros.png">
-        
-    </div>
-
-    
-      
-    </section>
-
-    <section class="categoria">
-
-        <div class="item">
-                
-            <img src="crepe.png">
-            
-        </div>
-
-        <div class="item">
-                
-            <img src="pipoca.png" alt="pipoca">
-            
-        </div>    
-    </section>
-  </main>
-
-  
-
-<a href="https://wa.me/5517991042693" target="_blank" class="whatsapp-float">
-    <i>
-        <img src="zap.png" alt="WhatsApp">
-    </i>
-</a>
-
-  <footer>
-    <p>&copy; 2025 Catálogo de Diversão. Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="script_preloader.js"></script>
-</body>
+    <footer class="rodape-pagina">
+      <p>&copy; 2025 Catálogo de Diversão. Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>
-
-
-
-
-
-
-
-  
-=======
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo Completo</title>
-  <link rel="stylesheet" href="catalogocompleto.css">
-  <link rel="icon" href="imagens/angelicabrinquedos.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-</head>
-<body>
-
-    <div class="preloader" id="preloader">
-        <div class="loader" id="loader"></div>
-        
-    </div>
-
-    <nav>
-        <a href="index.html">Inicio</a>    
-        <a href="#deliciasdaaline">Delicias da Aline</a>        
-        <a href="#contato">Contato</a>
-    </nav>
-
-  <header>   
-
-    
-  </header>
-
-
-  <main>
-    <section class="catalogo">
-    
-        <h5 class="tema">Brinquedos</h5>
-        <div class="categoria">
-            
-            <div class="item">
-                
-                <img src="imagens/futebol.png" width="150" height="200">
-                
-            </div>
-    
-            <div class="item">                
-                <img src="imagens/toboga.png">                
-            </div>
-    
-            <div class="item">
-                
-                <img src="imagens/mesaping.png">
-                
-            </div>   
-
-              
-            
-                        
-        </div>
-
-        
-    </section>
-
-    <section class="catalogo">
-    
-        <div class="categoria">
-            <div class="item">
-                
-                <img src="imagens/pula-pula.png">
-                
-            </div>
-    
-            <div class="item">
-                
-                <img src="imagens/bolinhas.png">
-                
-            </div>
-    
-            <div class="item">
-                
-                <img src="imagens/escorega.png">
-                
-            </div>   
-
-             
-            
-                                    
-        </div>
-
-        
-    </section>
-
-    <section>
-
-        <div class="categoria">
-            <div class="item">
-                
-                <img src="imagens/mini.png">
-                
-            </div>  
-
-            <div class="item">
-                
-                <img src="imagens/escorregagrande.png">
-                
-            </div> 
-
-            <div class="item">
-                
-                <img src="imagens/castelinhaescorrega.png">
-                
-            </div>
-        </div>
-
-    </section>
-    <h5 class="tema">Guloseimas</h5>
-    <section class="categoria">
-      
-      <div class="item">
-                
-        <img src="imagens/algodaodoce.png">
-        
-    </div>
-
-    <div class="item">
-                
-        <img src="imagens/churros.png">
-        
-    </div>
-
-    
-      
-    </section>
-
-    <section class="categoria">
-
-        <div class="item">
-                
-            <img src="imagens/crepe.png">
-            
-        </div>
-
-        <div class="item">
-                
-            <img src="imagens/pipoca.png" alt="pipoca">
-            
-        </div>    
-    </section>
-  </main>
-
-  
-
-<a href="https://wa.me/5517991042693" target="_blank" class="whatsapp-float">
-    <i>
-        <img src="imagens/zap.png" alt="WhatsApp">
-    </i>
-</a>
-
-  <footer>
-    <p>&copy; 2025 Catálogo de Diversão. Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="script_preloader.js"></script>
-</body>
-</html>
-
-
-
-
-
-
-
-  
->>>>>>> 7b516e099f8c962bc85b0983bc07b0efc741523c

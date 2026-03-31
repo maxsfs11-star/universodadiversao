@@ -1,244 +1,75 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delícias da Aline</title>
-    <link rel="stylesheet" href="deliciasdaaline.css"/>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">      
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="icon" href="imagens/deliciasaline.png">
-
+    <link rel="stylesheet" href="deliciasdaaline.css" />
+    <link rel="icon" href="deliciasaline.png" />
   </head>
-
-  <body>  
-
-    <div class="preloader" id="preloader">
-      <div class="loader" id="loader"></div>
-          
-    </div>
-      
-    <header class="menu">
-      <img src="fundomaca2.png" alt="imagemlogo" >
-
-      <nav class="menu2"> 
-        <a href="index.html">Inicio</a>               
-        <a href="paginaangelica.html">Angélica Brinquedos</a>
-        <a href="deliciasdaaline.html">Delicias da Aline</a>
-        <a href="sobre.html">Sobre</a>
-      </nav>      
-            
+  <body>
+    <header class="pagina-topo">
+      <div class="container topo-conteudo">
+        <a href="index.html" class="voltar">← Voltar ao início</a>
+        <img src="deliciasaline.png" alt="Delícias da Aline" class="logo-pagina" />
+        <nav class="menu-pagina">
+          <a href="catalogocompleto.html">Catálogo</a>
+          <a href="paginaangelica.html">Angélica Brinquedos</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
     </header>
 
-    <div class="banner">
-      <!--<img src="imagens/bannersite.jpg" alt="propaganda"> -->
-    </div>  
-    
-    <section>
-      <!-- carrocel -->
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="bannersite.jpg" class="d-block w-100" alt="bannermaça">
+    <main>
+      <section class="hero-pagina">
+        <div class="container hero-grid">
+          <div>
+            <span class="selo">Guloseimas e sabores</span>
+            <h1>Delícias da Aline</h1>
+            <p>
+              Uma página mais organizada para apresentar produtos que combinam com festas,
+              celebrações e momentos especiais. Ideal para mostrar opções com visual mais bonito.
+            </p>
           </div>
-          
-          <div class="carousel-item">
-            <img src="imagens/maocupcake.jpg" class="d-block w-100" alt="mãocupcake">
-          </div>     
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-
-      </div>    
-      
-      <!-- Fim Carrocel -->
-    
-    
-    </section>
-
-    <section class="produtos">
-      <div class="item" onclick="mostrarDescricao('maca')">
-        <img src="imagens/maca.png" alt="Maçã do Amor" />
-        <h2>Maçã do Amor</h2>
-      </div>
-
-      <div class="item" onclick="mostrarDescricao('cupcake')">
-        <img src="imagens/cupcake.png" alt="Cupcake" />
-        <h2>Cupcake</h2>
-      </div>
-
-      <div class="item" onclick="mostrarDescricao('espeto')">
-        <img src="imagens/espetomorango.png" alt="Espeto de Morango" />
-        <h2>Espeto de Morango</h2>
-      </div>
-
-      <div class="item" onclick="mostrarDescricao('donuts')">
-        <img src="imagens/donuts.png" alt="donuts" />
-        <h2>Mini donuts</h2>
-      </div>
-
-      
-    </section>
-
-    <div class="breveanimado">
-      <span></span>
-    </div>
-
-    <section class="breve">
-      
-        
-      
-    </section>
-    
-    <section id="descricao" class="descricao">
-      <p id="texto-descricao"></p>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Delícias da Aline. Todos os direitos reservados.</p>
-    </footer>
-  
-    
-    <script src="deliciasdaaline.js"></script>
-  </body>
-
-</html>
-
-
-=======
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    
-    <title>Delícias da Aline</title>
-    <link rel="stylesheet" href="deliciasdaaline.css"/>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">      
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="icon" href="imagens/deliciasaline.png">
-
-  </head>
-
-  <body>  
-
-    <div class="preloader" id="preloader">
-      <div class="loader" id="loader"></div>
-          
-    </div>
-      
-    <header class="menu">
-      <img src="imagens/fundomaca2.png" alt="imagemlogo" >
-
-      <nav class="menu2"> 
-        <a href="index.html">Inicio</a>               
-        <a href="paginaangelica.html">Angélica Brinquedos</a>
-        <a href="deliciasdaaline.html">Delicias da Aline</a>
-        <a href="sobre.html">Sobre</a>
-      </nav>      
-            
-    </header>
-
-    <div class="banner">
-      <!--<img src="imagens/bannersite.jpg" alt="propaganda"> -->
-    </div>  
-    
-    <section>
-      <!-- carrocel -->
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="imagens/bannersite.jpg" class="d-block w-100" alt="bannermaça">
+          <div class="hero-imagem-card">
+            <img src="bannersite.jpg" alt="Mesa com doces e guloseimas" />
           </div>
-          
-          <div class="carousel-item">
-            <img src="imagens/maocupcake.jpg" class="d-block w-100" alt="mãocupcake">
-          </div>     
         </div>
+      </section>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
+      <section class="produtos">
+        <div class="container">
+          <div class="titulo-secao">
+            <span>Produtos</span>
+            <h2>Algumas delícias para seu evento</h2>
+          </div>
 
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <div class="grid-produtos">
+            <article class="produto-card"><img src="maca.png" alt="Maçã do amor" /><h3>Maçã do amor</h3></article>
+            <article class="produto-card"><img src="crepe2.png" alt="Crepe" /><h3>Crepe</h3></article>
+            <article class="produto-card"><img src="cupcake.png" alt="Cupcake" /><h3>Cupcake</h3></article>
+            <article class="produto-card"><img src="donuts.png" alt="Donuts" /><h3>Donuts</h3></article>
+            <article class="produto-card"><img src="pipoca.png" alt="Pipoca" /><h3>Pipoca</h3></article>
+            <article class="produto-card"><img src="algodaodoce.png" alt="Algodão doce" /><h3>Algodão doce</h3></article>
+          </div>
+        </div>
+      </section>
 
-      </div>    
-      
-      <!-- Fim Carrocel -->
-    
-    
-    </section>
+      <section class="descricao-secundaria">
+        <div class="container destaque-box">
+          <div>
+            <h2>Mais cor, sabor e charme para sua festa</h2>
+            <p>
+              A ideia aqui é apresentar melhor os itens, facilitar a navegação do cliente e reforçar a identidade visual do projeto.
+            </p>
+          </div>
+          <a href="contato.html" class="btn-orcamento">Pedir orçamento</a>
+        </div>
+      </section>
+    </main>
 
-    <section class="produtos">
-      <div class="item" onclick="mostrarDescricao('maca')">
-        <img src="imagens/maca.png" alt="Maçã do Amor" />
-        <h2>Maçã do Amor</h2>
-      </div>
-
-      <div class="item" onclick="mostrarDescricao('cupcake')">
-        <img src="imagens/cupcake.png" alt="Cupcake" />
-        <h2>Cupcake</h2>
-      </div>
-
-      <div class="item" onclick="mostrarDescricao('espeto')">
-        <img src="imagens/espetomorango.png" alt="Espeto de Morango" />
-        <h2>Espeto de Morango</h2>
-      </div>
-
-      <div class="item" onclick="mostrarDescricao('donuts')">
-        <img src="imagens/donuts.png" alt="donuts" />
-        <h2>Mini donuts</h2>
-      </div>
-
-      
-    </section>
-
-    <div class="breveanimado">
-      <span></span>
-    </div>
-
-    <section class="breve">
-      
-        
-      
-    </section>
-    
-    <section id="descricao" class="descricao">
-      <p id="texto-descricao"></p>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Delícias da Aline. Todos os direitos reservados.</p>
+    <footer class="rodape-pagina">
+      <p>&copy; 2025 Delícias da Aline</p>
     </footer>
-  
-    
-    <script src="deliciasdaaline.js"></script>
   </body>
-
 </html>
-
-
->>>>>>> 7b516e099f8c962bc85b0983bc07b0efc741523c

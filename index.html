@@ -1,323 +1,242 @@
-<<<<<<< HEAD
 <!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Locação de Brinquedos</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Universo da Diversão</title>
     <link rel="icon" href="logo1.png" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
   </head>
-
-  <script
-    async
-    src="https://app.gptmaker.ai/widget/3E9045A98D3ED24B62BC66185331E412/float.js"
-  ></script>
-
   <body>
-    <div class="preloader" id="preloader">
-      <div class="loader" id="loader"></div>
-    </div>
+    <header class="topo">
+      <div class="container header-container">
+        <a href="index.html" class="logo-area" aria-label="Página inicial Universo da Diversão">
+          <img src="logo1.png" alt="Logo Universo da Diversão" class="logo" />
+        </a>
 
-    <header class="menu">
-      <img src="logo1.png" alt="imagemlogo" width="100" />
-
-      <nav class="menu2">
-        <a href="paginaangelica.html">Angélica Brinquedos</a>
-        <a href="deliciasdaaline.html">Delicias da Aline</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato / Orçamento</a>
-      </nav>
+        <nav class="menu2">
+          <a href="paginaangelica.html">Angélica Brinquedos</a>
+          <a href="deliciasdaaline.html">Delícias da Aline</a>
+          <a href="catalogocompleto.html">Catálogo</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
     </header>
 
-    <div class="banner"></div>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-texto">
+            <span class="tag">Festas e eventos inesquecíveis</span>
+            <h1>Diversão, sabor e alegria para o seu evento</h1>
+            <p>
+              Soluções para festas com brinquedos, guloseimas e atendimento rápido.
+              A Universo da Diversão ajuda você a montar um evento mais leve,
+              bonito e divertido para crianças e famílias.
+            </p>
 
-    <h1 class="textoprincipal">Destaques</h1>
-    <section id="opcoes">
-      <div class="opcoes">
-        <div class="item">
-          <h3 class="texto">Maça do Amor</h3>
-          <img src="maca.png" alt="maca" />
+            <div class="hero-botoes">
+              <a href="contato.html" class="btn btn-principal">Solicitar orçamento</a>
+              <a href="catalogocompleto.html" class="btn btn-secundario">Ver catálogo</a>
+            </div>
+          </div>
+
+          <div class="hero-destaque">
+            <div class="hero-card">
+              <h3>Atendimento rápido</h3>
+              <p>
+                Organize seu evento com mais praticidade e fale diretamente pelo WhatsApp.
+              </p>
+              <ul>
+                <li>Brinquedos infláveis</li>
+                <li>Alimentação para festas</li>
+                <li>Combos personalizados</li>
+                <li>Catálogo com itens variados</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="item">
-          <h3 class="texto">Pipoca</h3>
-          <img src="pipoca.png" alt="pipoca" />
+      <section class="servicos">
+        <div class="container">
+          <div class="titulo-secao">
+            <span>Nossos serviços</span>
+            <h2>O que você encontra aqui</h2>
+            <p>
+              Tudo pensado para deixar sua comemoração mais especial e organizada.
+            </p>
+          </div>
+
+          <div class="cards-servicos">
+            <article class="card-servico">
+              <div class="icone-servico"><i class="bi bi-controller"></i></div>
+              <h3>Brinquedos</h3>
+              <p>Opções para divertir crianças com segurança e energia no evento.</p>
+            </article>
+
+            <article class="card-servico">
+              <div class="icone-servico"><i class="bi bi-cup-hot"></i></div>
+              <h3>Guloseimas</h3>
+              <p>Sabores que complementam a festa e agradam convidados de todas as idades.</p>
+            </article>
+
+            <article class="card-servico">
+              <div class="icone-servico"><i class="bi bi-stars"></i></div>
+              <h3>Combos</h3>
+              <p>Monte uma proposta completa com mais praticidade para o seu orçamento.</p>
+            </article>
+
+            <article class="card-servico">
+              <div class="icone-servico"><i class="bi bi-chat-dots"></i></div>
+              <h3>Contato rápido</h3>
+              <p>Facilidade para tirar dúvidas e solicitar atendimento personalizado.</p>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="opcoes">
-      <div class="opcoes">
-        <div class="item">
-          <h3 class="texto">Crepe Suiço</h3>
-          <img src="crepe2.png" alt="Crepe" />
+      <section class="diferenciais">
+        <div class="container diferenciais-container">
+          <div class="titulo-secao titulo-claro">
+            <span>Por que escolher a gente</span>
+            <h2>Mais praticidade para organizar sua festa</h2>
+          </div>
+
+          <div class="lista-diferenciais">
+            <div class="item-diferencial">
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <h3>Atendimento personalizado</h3>
+                <p>Cada evento é único e o orçamento pode ser montado conforme sua necessidade.</p>
+              </div>
+            </div>
+
+            <div class="item-diferencial">
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <h3>Visual alegre</h3>
+                <p>Uma proposta divertida e colorida que combina com festas infantis e eventos familiares.</p>
+              </div>
+            </div>
+
+            <div class="item-diferencial">
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <h3>Facilidade no contato</h3>
+                <p>Você pode navegar pelo site, ver os serviços e pedir orçamento de um jeito simples.</p>
+              </div>
+            </div>
+
+            <div class="item-diferencial">
+              <i class="bi bi-check-circle-fill"></i>
+              <div>
+                <h3>Mais confiança</h3>
+                <p>Páginas organizadas, catálogo acessível e navegação clara para o cliente.</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="item">
-          <h3 class="texto">Tobogã Gigante</h3>
-          <img src="escorregagrande.png" alt="Tobogã" />
-        </div>
-      </div>
-    </section>
+      <section class="parceiros-section">
+        <div class="container">
+          <div class="titulo-secao">
+            <span>Especialidades</span>
+            <h2>Conheça nossas páginas principais</h2>
+          </div>
 
-    <section class="sobre">
-      <div class="container"></div>
-    </section>
-
-    <h1 class="textoprincipal">Parceiros</h1>
-
-    <section id="parceiros">
-      <div class="parceiros">
-        <div class="">
-          <img src="deliciasaline.png" width="230px" alt="logo-aline" />
-        </div>
-
-        <div class="">
-          <img src="angelicabrinquedos.png" alt="angelicabrinquedos" />
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="rodape">
-        <img src="logo1.png" alt="logo1" />
-
-        <div class="rodape2">
-          <a href="#">
-            <div>Sobre</div>
-          </a>
-          <a href="#">
-            <div>Contato</div>
-          </a>
-        </div>
-
-        <div class="rodape2">
-          <a href="#">
-            <div>Privacidade</div>
-          </a>
-
-          <a href="#">
-            <div>Termos de Uso</div>
-          </a>
-        </div>
-
-        <div class="rodape2">
-          <div class="btn-redes">
-            <a href="https://www.instagram.com/" target="_blank">
-              <button><i class="bi bi-instagram"></i></button>
+          <div class="parceiros">
+            <a href="paginaangelica.html" class="parceiro-card">
+              <h3>Angélica Brinquedos</h3>
+              <p>Brinquedos e atrações para deixar a festa ainda mais animada.</p>
+              <span>Ver página</span>
             </a>
 
-            <a href="https://wa.me/17991042693" target="_blank">
-              <button><i class="bi bi-whatsapp"></i></button>
+            <a href="deliciasdaaline.html" class="parceiro-card">
+              <h3>Delícias da Aline</h3>
+              <p>Guloseimas e sabores para complementar o seu evento.</p>
+              <span>Ver página</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-final">
+        <div class="container cta-box">
+          <div>
+            <span class="tag tag-clara">Pronto para começar?</span>
+            <h2>Peça seu orçamento e monte um evento com mais facilidade</h2>
+            <p>
+              Entre em contato para conhecer as opções e receber uma proposta personalizada.
+            </p>
+          </div>
+
+          <div class="cta-botoes">
+            <a href="contato.html" class="btn btn-principal">Pedir orçamento</a>
+            <a
+              href="https://wa.me/5517992647714"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-whatsapp"
+              aria-label="Abrir WhatsApp"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container rodape">
+        <div class="rodape-coluna">
+          <h4>Universo da Diversão</h4>
+          <p>
+            Brinquedos, guloseimas e soluções para festas e eventos inesquecíveis.
+          </p>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4>Navegação</h4>
+          <a href="sobre.html">Sobre</a>
+          <a href="catalogocompleto.html">Catálogo</a>
+          <a href="contato.html">Contato</a>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4>Redes</h4>
+          <div class="btn-redes">
+            <a
+              href="https://www.instagram.com/angelica_brinquedos017"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              class="btn-social"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a
+              href="https://wa.me/5517992647714"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              class="btn-social"
+            >
+              <i class="bi bi-whatsapp"></i>
             </a>
           </div>
         </div>
       </div>
 
       <div class="rodape3">
-        <p>&copy; 2025 Universo da Diversão</p>
+        <p>&copy; 2025 Universo da Diversão. Todos os direitos reservados.</p>
       </div>
     </footer>
-
-    <script src="script.js"></script>
-    <!--<script src="script_preloader.js"></script> -->
   </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Locação de Brinquedos</title>
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="icon" href="logo1.png">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">     
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        
-    </head>
-
-    <body>
-       
-        <div class="preloader" id="preloader">
-            <div class="loader" id="loader"></div>
-            
-        </div>
-        
-        
-        
-
-        <header class="menu">
-            <img src="logo1.png" alt="imagemlogo" width="100">
-
-            <nav class="menu2">                
-                <a href="paginaangelica.html">Angélica Brinquedos</a>
-                <a href="deliciasdaaline.html">Delicias da Aline</a>
-                <a href="sobre.html">Sobre</a>
-            </nav>
-            
-              
-        
-        </header>
-
-        
-
-        <div class="banner">
-            
-        </div>
-
-        <h1 class="textoprincipal">Destaques</h1>
-        <section id="opcoes">
-            
-            <div class="opcoes">
-                <div class="item">
-                    <h3 class="texto">Maça do Amor</h3>
-                    <img src="maca.png" alt="maca">
-                    
-                </div>
-
-                <div class="item">
-                    <h3 class="texto">Pipoca</h3>
-                    <img src="pipoca.png" alt="pipoca">
-                    
-                </div>       
-
-                
-            </div>
-        </section>
-
-        <section id="opcoes">
-            
-            
-            <div class="opcoes">
-                <div class="item">
-                    <h3 class="texto">Crepe Suiço</h3>
-                    <img src="crepe2.png" alt="Crepe">
-                    
-                </div>
-
-                <div class="item">
-                    <h3 class="texto">Tobogã Gigante</h3>
-                    <img src="escorregagrande.png" alt="Tobogã">
-                    
-                </div>       
-
-                
-            </div>
-        </section>
-
-
-
-
-        <div class="sobre">
-            <section id="sobre">
-                
-            </section>
-        </div>
-
-        <h1 class="textoprincipal">Parceiros</h1>
-
-        <section id="parceiros">
-            
-            <div class="parceiros">
-                <div class=""> 
-                        
-                    <img src="deliciasaline.png" width="230px" alt="logo-aline">      
-                </div>
-            
-                <div class="">
-                    
-                    <img src="angelicabrinquedos.png" alt="angelicabrinquedos">
-                </div>
-            
-                
-            </div>
-
-
-
-        </section>
-
-        <footer>                      
-
-            <div class="rodape">
-
-                <img src="logo1.png" alt="logo1">
-
-                <div class="rodape2">
-                    <h5>Universo da Diversão</h5>
-                    <a href="#">                        
-                        <div>Sobre</div>
-                    </a>
-                    <a href="#">                        
-                        <div>Contato</div>
-                    </a>
-                    
-                </div>
-    
-                
-                <div class="rodape2">
-
-                    <h5>Privacidade</h5>
-                    <a href="#">                        
-                        <div>Privacidade</div>
-                    </a>
-
-                    <a href="#">
-                        <div>Termos de Uso</div>                        
-                    </a>
-                    
-                </div>
-
-                <div class="rodape2">
-                    <h5>Siga-Me</h5>
-                    <div class="btn-redes">
-                        <a href="#">
-                            <button><i class="bi bi-instagram"></i></button> 
-                            <button><i class="bi bi-instagram"></i></button>
-                            
-                        </a>
-                    </div>
-                    
-                </div>
-                
-            </div>
-
-            <div class="rodape3">
-                <p>&copy; 2025 Universo da Diversão</p>
-            </div>
-
-            
-           
-
-            
-        </footer>
-
-        <a href="https://wa.me/5517992647714" class="whatsapp-float" target="_blank">
-            <i>
-                <img src="zap.png" alt="whatsapp">
-            </i>
-        </a>
-
-        <script src="script.js"></script>
-        <!--<script src="script_preloader.js"></script> -->
-    </body>
-</html>
-
-
-
-
-  
-
->>>>>>> 7b516e099f8c962bc85b0983bc07b0efc741523c
